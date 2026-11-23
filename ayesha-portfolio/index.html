@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Ayesha Nasreen — portfolio of projects, skills and education.">
+<title>Ayesha Nasreen | Portfolio</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{--navy:#0a1f44;--blue:#1d4ed8;--sky:#eaf1ff;--gold:#d4a017;--gold2:#f2cf66;--ink:#16213a;--muted:#5a6784;--line:#dfe6f5;--serif:'Playfair Display',Georgia,serif;--sans:'Poppins',system-ui,sans-serif}
+*{box-sizing:border-box}html{scroll-behavior:smooth;scroll-padding-top:76px}
+body{margin:0;font:400 15px/1.7 var(--sans);color:var(--ink);background:#fff}
+a{color:inherit}
+header{position:sticky;top:0;z-index:20;background:var(--navy);border-bottom:2px solid var(--gold)}
+.bar{max-width:1120px;margin:auto;height:68px;padding:0 24px;display:flex;align-items:center;justify-content:space-between}
+.logo{font:700 20px var(--serif);color:#fff;text-decoration:none}.logo b{color:var(--gold2)}
+nav{display:flex;gap:26px}nav a{color:#c9d5f2;text-decoration:none;font-size:13px;font-weight:500}nav a:hover{color:var(--gold2)}
+#menu{display:none;background:none;border:0;color:#fff;font-size:24px}
+.hero{background:radial-gradient(circle at 80% 20%,#1d4ed8 0,transparent 45%),var(--navy);color:#fff;padding:96px 24px 110px;text-align:center}
+.hero .in{max-width:760px;margin:auto}
+.badge{display:inline-block;border:1px solid var(--gold);color:var(--gold2);padding:5px 16px;border-radius:99px;font-size:12px;letter-spacing:.12em;text-transform:uppercase}
+.hero h1{font:700 clamp(40px,7vw,72px)/1.1 var(--serif);margin:22px 0 14px}
+.hero h1 span{color:var(--gold2)}
+.hero p{color:#c9d5f2;max-width:540px;margin:0 auto 30px}
+.btns{display:flex;gap:12px;justify-content:center;flex-wrap:wrap}
+.btn{padding:12px 24px;border-radius:6px;text-decoration:none;font-weight:600;font-size:13px}
+.gold{background:linear-gradient(135deg,var(--gold2),var(--gold));color:var(--navy)}
+.ghost{border:1px solid #5b78c7;color:#fff}.ghost:hover{border-color:var(--gold2)}
+.wrap{max-width:1120px;margin:auto;padding:0 24px}
+section{padding:84px 0}.alt{background:var(--sky)}
+.eyebrow{color:var(--gold);font-weight:600;font-size:12px;letter-spacing:.16em;text-transform:uppercase}
+h2{font:700 clamp(28px,4vw,40px)/1.2 var(--serif);color:var(--navy);margin:8px 0 12px}
+h2:after{content:"";display:block;width:56px;height:3px;background:var(--gold);margin-top:14px}
+.lede{color:var(--muted);max-width:620px;margin:0 0 36px}
+.grid{display:grid;gap:20px}.g3{grid-template-columns:repeat(3,1fr)}.g2{grid-template-columns:repeat(2,1fr)}
+.card{background:#fff;border:1px solid var(--line);border-radius:12px;padding:26px;transition:.25s}
+.card:hover{transform:translateY(-5px);box-shadow:0 16px 36px #0a1f4422;border-color:var(--gold)}
+.skill .ic{width:46px;height:46px;border-radius:10px;background:var(--navy);color:var(--gold2);display:grid;place-items:center;font:700 16px var(--serif);margin-bottom:16px}
+.skill h3,.proj h3{font:700 18px var(--serif);color:var(--navy);margin:0 0 6px}
+.skill p,.proj p{color:var(--muted);font-size:13px;margin:0}
+.group{font-weight:600;color:var(--blue);font-size:13px;margin:34px 0 14px}.group:first-of-type{margin-top:0}
+.proj{border-top:4px solid var(--gold);display:flex;flex-direction:column}
+.proj .num{font:700 13px var(--sans);color:var(--blue);letter-spacing:.12em;margin-bottom:10px}
+.proj p{margin-bottom:16px;flex:1}
+.tags{display:flex;gap:6px;flex-wrap:wrap;margin-bottom:16px}.tags span{background:var(--sky);color:var(--blue);font-size:11px;font-weight:600;padding:4px 10px;border-radius:5px}
+.link{font-size:12px;font-weight:600;color:var(--blue);text-decoration:none}.link:hover{color:var(--gold)}
+.tl{max-width:680px;margin:auto;position:relative;padding-left:30px}
+.tl:before{content:"";position:absolute;left:6px;top:6px;bottom:6px;width:2px;background:var(--gold)}
+.ed{position:relative;background:#fff;border:1px solid var(--line);border-radius:12px;padding:22px 24px;margin-bottom:18px}
+.ed:before{content:"";position:absolute;left:-31px;top:28px;width:14px;height:14px;border-radius:50%;background:var(--navy);border:3px solid var(--gold)}
+.ed small{color:var(--gold);font-weight:600;letter-spacing:.1em;font-size:11px}
+.ed h3{font:700 19px var(--serif);color:var(--navy);margin:2px 0}.ed p{margin:0;color:var(--muted);font-size:13px}
+.ed .m{display:inline-block;margin-top:10px;background:var(--navy);color:var(--gold2);padding:4px 12px;border-radius:5px;font-size:12px;font-weight:600}
+.contact{background:var(--navy);color:#fff;text-align:center}.contact h2{color:#fff}.contact h2:after{margin:14px auto 0}
+.contact .lede{color:#c9d5f2;margin:0 auto 32px}
+.cl{display:flex;gap:14px;justify-content:center;flex-wrap:wrap}
+.cl a{border:1px solid var(--gold);color:var(--gold2);padding:13px 22px;border-radius:8px;text-decoration:none;font-size:14px;font-weight:500;word-break:break-all}
+.cl a:hover{background:var(--gold);color:var(--navy)}
+footer{background:#06142e;color:#8ea0cc;text-align:center;font-size:12px;padding:20px}
+@media(max-width:850px){.g3{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:600px){#menu{display:block}nav{display:none;position:absolute;top:68px;left:0;right:0;background:var(--navy);flex-direction:column;gap:16px;padding:20px 24px;border-bottom:2px solid var(--gold)}nav.open{display:flex}.g3,.g2{grid-template-columns:1fr}section{padding:64px 0}.hero{padding:70px 24px 80px}}
+</style>
+</head>
+<body>
+<header><div class="bar"><a class="logo" href="#home">Ayesha<b>.</b></a>
+<button id="menu" aria-label="Toggle navigation" aria-expanded="false">☰</button>
+<nav id="nav"><a href="#skills">Skills</a><a href="#projects">Projects</a><a href="#education">Education</a><a href="#contact">Contact</a></nav></div></header>
+
+<main>
+<div class="hero" id="home"><div class="in">
+  <span class="badge">Portfolio</span>
+  <h1>Ayesha <span>Nasreen</span></h1>
+  <p>A showcase of my projects, skills and education.</p>
+  <div class="btns"><a class="btn gold" href="#projects">View my projects</a><a class="btn ghost" href="#contact">Get in touch</a></div>
+</div></div>
+
+<section id="skills"><div class="wrap">
+  <div class="eyebrow">What I know</div><h2>Skills</h2>
+  <p class="lede">The tools and abilities I use in my projects and everyday work.</p>
+  <div class="group">Microsoft apps</div>
+  <div class="grid g3">
+    <div class="card skill"><div class="ic">W</div><h3>Microsoft Word</h3><p>Documents, reports and formatting</p></div>
+    <div class="card skill"><div class="ic">X</div><h3>Microsoft Excel</h3><p>Spreadsheets and data organisation</p></div>
+    <div class="card skill"><div class="ic">P</div><h3>Microsoft PowerPoint</h3><p>Presentations and slide design</p></div>
+  </div>
+  <div class="group">Programming</div>
+  <div class="grid g3">
+    <div class="card skill"><div class="ic">C++</div><h3>C++</h3><p>Console applications and file handling</p></div>
+    <div class="card skill"><div class="ic">OOP</div><h3>Object-Oriented Programming</h3><p>Classes, inheritance, polymorphism</p></div>
+    <div class="card skill"><div class="ic">◈</div><h3>Problem Solving</h3><p>Breaking tasks into clear steps</p></div>
+  </div>
+  <div class="group">Personal strengths</div>
+  <div class="grid g3">
+    <div class="card skill"><div class="ic">✦</div><h3>Communication</h3><p>Clear written and spoken expression</p></div>
+    <div class="card skill"><div class="ic">❖</div><h3>Teamwork</h3><p>Working well on group projects</p></div>
+    <div class="card skill"><div class="ic">◎</div><h3>Time Management</h3><p>Planning work and meeting deadlines</p></div>
+  </div>
+</div></section>
+
+<section class="alt" id="projects"><div class="wrap">
+  <div class="eyebrow">My work</div><h2>Projects</h2>
+  <p class="lede">Academic and personal projects where ideas meet implementation.</p>
+  <div class="grid g3">
+    <article class="card proj"><div class="num">01</div><h3>SafeHer AI</h3>
+      <p>A women's and student safety concept featuring anonymous campus reporting, a risk map, and an AI guidance assistant.</p></article>
+    <article class="card proj"><div class="num">02</div><h3>Chat Management System</h3>
+      <p>A console-based chat application demonstrating object-oriented programming, message handling, and file storage.</p>
+      <div class="tags"><span>C++</span><span>OOP</span><span>Vectors</span></div>
+      <a class="link" href="projects/chat-management-system/ChatManagementSystem.cpp" target="_blank" rel="noreferrer">View source code ↗</a></article>
+    <article class="card proj"><div class="num">03</div><h3>Complaint Management System</h3>
+      <p>A menu-driven console application to add, view, search, resolve and delete complaints, built with OOP concepts such as inheritance, polymorphism, function overloading and friend functions.</p>
+      <div class="tags"><span>C++</span><span>OOP</span><span>Inheritance</span></div>
+      <a class="link" href="projects/complaint-management-system/ComplaintManagementSystem.cpp" target="_blank" rel="noreferrer">View source code ↗</a></article>
+  </div>
+</div></section>
+
+<section id="education"><div class="wrap">
+  <div class="eyebrow">Academic background</div><h2>Education</h2>
+  <p class="lede">My academic journey so far.</p>
+  <div class="tl">
+    <div class="ed"><small>INTERMEDIATE</small><h3>Intermediate Education</h3><p>Aspire College, Kamalia</p><span class="m">Marks: 831</span></div>
+    <div class="ed"><small>SECONDARY</small><h3>Secondary Education</h3><p>Allama Iqbal High School, Kamalia</p><span class="m">Marks: 848</span></div>
+  </div>
+</div></section>
+
+<section class="contact" id="contact"><div class="wrap">
+  <div class="eyebrow">Contact</div><h2>Let's connect</h2>
+  <p class="lede">Feel free to reach out by email or phone.</p>
+  <div class="cl"><a href="mailto:hafizaayeshashamir@gmail.com">hafizaayeshashamir@gmail.com</a><a href="tel:03184165758">0318-4165758</a></div>
+</div></section>
+</main>
+<footer>© <span id="y"></span> Ayesha Nasreen</footer>
+<script>
+const m=document.getElementById("menu"),n=document.getElementById("nav");
+m.onclick=()=>m.setAttribute("aria-expanded",String(n.classList.toggle("open")));
+n.querySelectorAll("a").forEach(a=>a.onclick=()=>{n.classList.remove("open");m.setAttribute("aria-expanded","false")});
+document.getElementById("y").textContent=new Date().getFullYear();
+</script>
+</body>
+</html>
